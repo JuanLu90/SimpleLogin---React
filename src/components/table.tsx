@@ -7,13 +7,11 @@ interface IProps {
   users: IUser[];
 }
 
-const Table: React.FC<IProps> = props => {
-
+const Table: React.FC<IProps> = (props: any) => {
   const styleTable = {
-    margin: 'auto',
+    margin: "auto",
     fontSize: "0.55em"
   };
-
 
   return (
     <table style={styleTable}>
@@ -24,7 +22,7 @@ const Table: React.FC<IProps> = props => {
         </tr>
       </thead>
       <tbody className="bg-warning text-dark">
-        {props.users.map(u => (
+        {props.users.map((u: any) => (
           <tr key={u._id}>
             <td className="border border-secondary p-2">{u.username}</td>
             <td className="border border-secondary p-2">{u.email}</td>

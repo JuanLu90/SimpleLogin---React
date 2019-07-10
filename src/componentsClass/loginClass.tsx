@@ -1,7 +1,7 @@
 import React from "react";
 import { IUser } from "../interfaces";
 import TableClass from "../componentsClass/tableClass";
-var jwtDecode = require("jwt-decode");
+// var jwtDecode = require("jwt-decode");
 
 interface IState {
   inputValueUsername: string;
@@ -67,7 +67,7 @@ class LoginClass extends React.Component<{}, IState> {
 
     const token = sessionStorage.getItem("token");
     if (token) {
-      var decoded = jwtDecode(token);
+      // var decoded = jwtDecode(token);
     }
 
     return (
