@@ -17,8 +17,13 @@ interface IPropsGLobal {
 }
 
 const App: React.FC<IProps & IPropsGLobal> = props => {
+  // const divStyle = {
+  //   margin: "200px auto"
+  // };
+
+
   const divStyle = {
-    margin: "200px auto"
+    margin: "100px auto"
   };
 
   const divStyle2 = {
